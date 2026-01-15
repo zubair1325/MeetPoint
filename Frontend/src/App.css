@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow-x: hidden;
+}
+
+.landingPageContainer nav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.2rem;
+  padding-block: 1.5rem;
+  padding: 2rem 5rem 0 5rem;
+}
+.landingPageContainer nav h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.landingPageContainer nav h2 i {
+  color: #f8a03ced;
+  font-size: 2.8rem;
+}
+
+.landingPageContainer nav .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-block: 1.2rem;
+}
+.landingPageContainer nav .nav-list p {
+  font-size: 1.2rem;
+  font-weight: 50;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.landingPageContainer nav .nav-list p:hover {
+  text-decoration: underline;
+  font-size: 1.205rem;
+}
+.landingPageContainer nav .nav-list > div {
+  margin-right: 2rem;
+  background-color: #f08307e8;
+  padding: 0.7rem 1.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.landingPageContainer nav .nav-list > div:hover,
+.landingPageContainer nav .nav-list > div p:hover {
+  background-color: #cd740e;
+  font-size: 1.205rem;
+  text-decoration: none;
+}
+
+.landingPageContainer .landing-main-container {
+  display: flex;
+  justify-content: space-between;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content {
+  padding: 13rem 0 0 12rem;
+  font-size: 3rem;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content
+  h3 {
+  font-weight: 300;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content
+  p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content
+  p
+  span {
+  color: #f09d3f;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content
+  h3
+  span {
+  color: #f08811;
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content
+  div[role="button"] {
+  background-color: #db923ee8;
+  width: fit-content;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content
+  div[role="button"]:hover {
+  background-color: #e67c04;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-text-content
+  div[role="button"]
+  a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-img-content {
+  padding: 4rem 7rem 0 0;
+}
+.landingPageContainer
+  .landing-main-container
+  .landing-main-container-img-content
+  img {
+  width: 680px;
+}
