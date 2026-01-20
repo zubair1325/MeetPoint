@@ -8,7 +8,7 @@ function LandingPage() {
       <nav>
         <div className="nav-header">
           <h2>
-            <i class="fa-solid fa-video"></i> MeetPoint
+            <i className="fa-solid fa-video"></i> MeetPoint
           </h2>
         </div>
         <div className="nav-list">
@@ -31,11 +31,11 @@ function LandingPage() {
             from anywhere with <span>MeetPoint</span>
           </p>
           <div role="button">
-            <Link to="/home">Get Started</Link>
+            <Link to="/auth">Get Started</Link>
           </div>
         </div>
         <div className="landing-main-container-img-content">
-          <img src="/public/mobile.png" alt="mobile photo" />
+          <img src="/mobile.png" alt="mobile photo" />
         </div>
       </div>
     </div>
