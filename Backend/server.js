@@ -11,7 +11,8 @@ import userRoutes from "./routes/userRoutes.js";
 
 const app = express();
 const server = createServer(app);
-const io = connectToSocket;
+const io = connectToSocket(server);
+
 
 app.set("port", process.env.PORT || 8080);
 app.use(cors());
