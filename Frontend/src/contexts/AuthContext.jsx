@@ -7,8 +7,7 @@ import server from "../environment";
 export const AuthContext = createContext({});
 
 const client = axios.create({
-  baseURL: `${server}/api/v1/users`
-
+  baseURL: `${server}/api/v1/users`,
 });
 
 export const AuthProvider = ({ children }) => {
@@ -19,6 +18,7 @@ export const AuthProvider = ({ children }) => {
   const router = useNavigate();
 
   const handleRegister = async (name, username, password) => {
+    console.log("ccccccccc");
     let request = await client.post("/register", {
       name: name,
       username: username,
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     console.log(request);
     if (request.status === httpStatus.CREATED) {
       return request.data.message;
-    } 
+    }
   };
 
   const handleLogin = async (username, password) => {
